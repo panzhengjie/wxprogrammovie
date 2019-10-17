@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <image class='imagex' src='{{userInfo.avatarUrl}}'></image>
+  <button open-type="getUserInfo" bindgetuserinfo='handleGetUserInfo'>点击获取用户信息</button>
+  <text class='txt'>欢迎{{msg}} {{userInfo.nickName}}</text>
+  <view class='progressWrap' bindtap='handle'>
+    <text class='progress'>点击进入小程序</text>
+  </view>
+</view>

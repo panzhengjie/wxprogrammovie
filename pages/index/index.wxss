@@ -1,0 +1,32 @@
+/* pages/index/index.wxss */
+page{
+  height: 100%;
+  background: #07C160;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagex{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin-top: 200rpx;
+}
+.txt{
+  font-size: 40rpx;
+  margin-top: 200rpx;
+}
+.progressWrap{
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 2rpx solid #000000;
+  text-align: center;
+  margin-top: 100rpx;
+  border-radius: 10rpx;
+}
+.progress{
+  font-size: 30rpx;
+}

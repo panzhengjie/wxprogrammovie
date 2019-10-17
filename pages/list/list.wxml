@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<import src='../template/template.wxml' />
+<view>
+  <swiper indicator-dots indicator-color='green' indicator-active-color='	#FF1493' autoplay catchtap='handleToDetail'>
+    <swiper-item>
+      <image src='/images/detail/carousel/01.jpg' data-index='1'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/02.jpg' data-index='0'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/03.jpg' data-index='2'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/04.jpg' data-index='3'></image>
+    </swiper-item>
+  </swiper>
+  <block  wx:for='{{array}}' wx:key='{{index}}'>
+    <view catchtap='handleDetail' data-index='{{index}}'>
+     <template is='moban' data='{{item}}'/>
+    </view>
+    
+  </block>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/movie/movie.wxml-->
+<navigator url="/pages/movieDetail/movieDetail?index={{index}}" wx:for="{{movieInfo}}" wx:key="{{index}}">
+  <view class='movieContent'>
+    <image class='movieImg' src='/images/tab/ciwei.png'></image>
+    <view class='movieInfo'>
+      <text class='movieName'>{{item.title}}</text>
+      <text class='movieYear'>年份:{{item.year}}</text>
+      <text class='movieDirecter'>导演:{{item.directors[0].name}}{{item.directors[1].name}}
+      {{item.directors[2].name}}</text>
+    </view>
+    <text class='movieRating'>{{item.rating.average}}</text>
+  </view>
+</navigator>
+

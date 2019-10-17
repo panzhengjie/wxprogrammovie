@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/list/list",
+    "pages/item/item",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4682B4",
+    "navigationBarTitleText": "潘征杰最帅"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "阅读",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

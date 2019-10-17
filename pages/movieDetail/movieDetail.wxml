@@ -1,0 +1,11 @@
+<!--pages/movieDetail/movieDtail.wxml-->
+<view class='movieDetailContent'>
+  <image class='movieBigImg' src='/images/tab/ciwei_hl.png'></image>
+  <text class='movieName'>{{nowMovie.title}}</text>
+  <view class='movieInfo'>
+   <text class='movieRating'>评分: {{nowMovie.rating.average}}</text>
+   <text class='movieDirectors'>导演: {{nowMovie.directors[0].name}}{{nowMovie.directors[1].name}}{{nowMovie.directors[2].name}}</text>
+   <text class='penson'>主演: {{nowMovie.casts[0].name}}  {{nowMovie.casts[1].name}}  {{nowMovie.casts[2].name}}</text>
+  </view>
+  <button>我要观影</button>
+</view>

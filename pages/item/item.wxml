@@ -1,0 +1,22 @@
+<!--pages/item/item.wxml-->
+<view class='detailContent'>
+  <image class='detailImg' src='{{isplay?arraydatas.music.coverImgUrl:arraydatas.detail_img}}'></image>
+  <image class='musicImg' src='{{isplay?"/images/music/music-start.png":"/images/music/music-stop.png"}}'catchtap='changeMusic'></image>
+  <view class='detailAvatar'>
+    <image src='{{arraydatas.avatar}}'></image>
+    <text>{{arraydatas.author}}</text>
+    <text>发布于</text>
+    <text>{{arraydatas.date}}</text>
+  </view>
+  <text class='detailCompony'>{{arraydatas.title}}</text>
+  <view class='lineImage'>
+    <view class='lineImg'>
+      <image wx:if='{{!isShow}}' catchtap='tochangeIsShow' src='/images/icon/collection-anti.png'></image>
+      <image wx:if='{{isShow}}' catchtap='tochangeIsShow' src='/images/icon/collection.png'></image>
+      <image src='/images/icon/share.png'  catchtap='shareText'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <button class='btn' open-type='share'>转发此文</button>
+  <text class='detailText'>{{arraydatas.detail_content}}</text>
+</view>

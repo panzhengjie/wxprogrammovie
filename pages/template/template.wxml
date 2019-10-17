@@ -1,0 +1,17 @@
+<template name='moban'>
+  <view class='wrap'>
+    <view class='avatar'>
+      <image src='{{item.avatar}}'></image>
+      <text>{{item.date}}</text>
+    </view>
+    <text class='jiaoyu'>{{item.title}}</text>
+    <image class='carouselImg' src='{{item.detail_img}}'></image>
+    <text class='textDetail'>{{item.detail_content}}</text>
+    <view class='viewImg'>
+      <image src='{{item.detail_love_image1}}'></image>
+      <text>{{item.love_count}}</text>
+      <image src='{{item.detail_love_image2}}'></image>
+      <text>{{item.attention_count}}</text>
+    </view>
+  </view>
+</template>
